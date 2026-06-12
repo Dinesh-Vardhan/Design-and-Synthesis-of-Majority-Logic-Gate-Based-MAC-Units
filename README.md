@@ -162,6 +162,30 @@ Implemented Modules:
 
 ---
 
+# Performance Comparison
+
+## FPGA vs ASIC Evaluation Summary
+
+| Design | Platform | LUTs | Area (µm²) | Delay (ns) | Power |
+|----------|----------|----------|----------|----------|----------|
+| 4×4 MAC | FPGA (XC7Z010CLG400-1) | 26 | — | 2.431 | 0.114 W |
+| 4×4 MAC | ASIC (SKY130) | — | 997 | 3.35 | 107 µW |
+| 8×8 MAC | FPGA (XC7Z010CLG400-1) | 93 | — | 2.566 | 0.111 W |
+| 8×8 MAC | ASIC (SKY130) | — | 5762 | 6.50 | 365 µW |
+
+---
+
+## Key Observations
+
+- Successfully designed and verified both 4×4 and 8×8 Majority Logic Gate based MAC architectures.
+- FPGA implementation required only **26 LUTs** for the 4×4 design and **93 LUTs** for the 8×8 design.
+- ASIC implementation occupied **997 µm²** for the 4×4 MAC and **5762 µm²** for the 8×8 MAC using SKY130 technology.
+- Functional verification was completed using Icarus Verilog.
+- FPGA synthesis was performed using Xilinx Vivado.
+- ASIC synthesis and analysis were performed using Yosys and OpenROAD.
+
+  ---
+  
 # Key Achievements
 
 ✅ Designed custom Majority Logic Gate based 4×4 and 8×8 MAC architectures using Verilog HDL
