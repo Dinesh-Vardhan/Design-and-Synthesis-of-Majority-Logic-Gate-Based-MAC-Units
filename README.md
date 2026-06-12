@@ -67,8 +67,6 @@ Implemented Modules:
 
 # Functional Verification
 
-Simulation and verification were performed using **Icarus Verilog**.
-
 ## 4×4 MAC Functional Verification
 
 <p align="center">
